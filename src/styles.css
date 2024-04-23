@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --s: 400px;
+    --c: #fff;
+    --_g: #0000 8%, var(--c) 0 17%, #0000 0 58%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:
+            linear-gradient(135deg, #0000 20.5%, var(--c) 0 29.5%, #0000 0) 0 calc(var(--s)/4),
+            linear-gradient(45deg, var(--_g)) calc(var(--s)/2) 0,
+            linear-gradient(135deg, var(--_g), var(--c) 0 67%, #0000 0),
+            linear-gradient(45deg, var(--_g), var(--c) 0 67%, #0000 0 83%, var(--c) 0 92%, #0000 0),
+            #d9f0f8;
+    background-size: var(--s) var(--s);
+    font-family: 'Montserrat', sans-serif;
+    color: #09536a;
+}
+
+
+.container {
+    max-width: 720px;
+    margin: 30px auto;
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.post {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #09536a;
+    border-radius: 10px;
+}
+
+.post__title {
+    display: flex;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.post__body {
+    margin-top: 14px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.post__comments {
+    margin-top: 7px;
+}
+
+.comments__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: underline;
+    color: #09536a;
+}
+
+.comments {
+    margin-top: 14px;
+}
+
+.comment {
+    margin: 10px 0;
+}
+
+.comment__title {
+    font-weight: 600;
+}
+
+.comment__body {
+    text-align: justify;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+.pagination__button {
+    background-color: #ffffff;
+    border: 2px solid #09536a;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: #09536a;
+}
+
+.pagination__button-inactive {
+    background-color: #d8d8d8;
+    border: 2px solid #3a4c4f;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #3a4c4f;
+}
+
+.pagination__current {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+}

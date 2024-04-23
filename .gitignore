@@ -1,0 +1,9 @@
+# WebStorm IDE
+.idea/
+
+# Dependences
+node_modules/
+
+# Dev & Build
+dist/
+.parcel-cache/
